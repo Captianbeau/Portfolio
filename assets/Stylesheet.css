@@ -1,0 +1,33 @@
+/*(put colors in root) colors green- #8bdfca  blue- #8ba6df purple- #b28bdf*/
+body{
+    font-family: 'cursive', Georgia, 'Times New Roman', Times, serif;
+    background-color:#8ba6df;
+}
+/* Needs background */
+header{
+    
+    color:antiquewhite;
+    background-color: #b28bdf ;
+    height: 100px;
+}
+
+h1{
+    font-size: 50px;
+}
+/* make the nav white and remove line move to the right */
+nav{ 
+    color:antiquewhite;
+    
+}
+section{
+    background-color: #8bdfca ;
+    
+    /* display:flex;
+    flex-wrap: wrap; */
+}
+h2{
+    /* display:inline; */
+}
+footer{
+    height: 50px;
+}
