@@ -1,14 +1,26 @@
 /*(put colors in root) colors green- #8bdfca  blue- #8ba6df purple- #b28bdf*/
+:root{
+    --purple: #b28bdf;
+    --green: #8bdfca;
+    --blue: #8ba6df;
+    --white: antiquewhite;
+}
 body{
     font-family: 'cursive', Georgia, 'Times New Roman', Times, serif;
+    color:antiquewhite;
     background-color:#8ba6df;
+    background-image: url(background-body.jpg);
+    background-repeat: round;
 }
 /* Needs background */
 header{
     
-    color:antiquewhite;
-    background-color: #b28bdf ;
+    background-image: url(background-header.jpg);
+    /* background-color: #b28bdf ; */
     height: 100px;
+}
+main{
+
 }
 
 h1{
@@ -20,8 +32,8 @@ nav{
     
 }
 section{
-    background-color: #8bdfca ;
-    
+    /* background-color: #8bdfca ; */
+    padding: 20px;
     /* display:flex;
     flex-wrap: wrap; */
 }
