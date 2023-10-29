@@ -1,4 +1,4 @@
-/*(put colors in root) colors green- #8bdfca  blue- #8ba6df purple- #b28bdf darkblue- #005884 darkgreen- #327564 darkpurple- #3e0084 */
+/*colors green- #8bdfca  blue- #8ba6df purple- #b28bdf darkblue- #005884 darkgreen- #327564 darkpurple- #3e0084 */
 :root{
     --purple: #b28bdf;
     --green: #8bdfca;
@@ -6,72 +6,66 @@
     --white: antiquewhite;
     --darkgreen: #327564;
 }
+
 body{
     font-family: 'cursive', Georgia, 'Times New Roman', Times, serif;
     color:antiquewhite;
     background-color:var(--blue);
     background-image: url(background-body.jpg);
     background-repeat: round;
-
 }
-/* Needs background */
+
 header{
     
     background-image: url(background-header.jpg);
     padding:5%;
     border-bottom:10px solid #3e0084 ;
     margin-bottom:20px;
-
 }
+
 h1{
     font-size: 100px;
     display:block;
     margin-bottom: 20px;
 }
+
 main{
     display:flex;
     flex-direction: column;
     margin-bottom:20px;
-
 }
-/* make the nav white and remove line move to the right */
+
 nav{
   position:absolute;
   right: 200px;
-  /* margin-right:20px; */
 }
 nav a{ 
     color:var(--white);
     text-decoration: none;
     margin:30px;
-    font-size: 30px;
-    
+    font-size: 30px;  
 }
+
 section{
-    
     margin-left: 50px;
     margin-right:50px;
     margin-bottom:20px;
     border-bottom: 10px solid #005884 ;
 }
+
 h2{
-    /* justify-content: center; */
-    /* max-width: 500px; */
     margin-bottom:20px;
     margin-left: 40%;
     font-size: 50px;
     padding:5px;
     text-decoration: underline;
 }
-
+/* picture in first section */
 #avatar{
     float:left;
     margin:20px;
-
-
-
-
 }
+
 img{
     flex-direction: row;
     flex-wrap:wrap;
@@ -79,29 +73,33 @@ img{
     width:400px;
     border: 10px solid var(--darkgreen);
 }
+/* first picture in my works */
 #best{
     width:50%;
     margin-left: 20%;
     margin-right:20%;
 }
+
 p{
-    /* display:inline; */
     font-size: 30px;
     line-height: 1.5;
     margin:20px;
-    /* padding:20%; */
 }
+
 #works{
     background-image: url(roseprint.jpg);
 }
+
 #works h2{
     display:inline;
     background-color: var(--darkgreen);
     padding:5px;
 }
+/* holds contact links */
 div{
     margin-left:30%;
 }
+
 #contact a {
     text-decoration: none;
     color:var(--white);
@@ -114,24 +112,26 @@ footer{
     padding:5%;
     background-image: url(background-footer.jpg);
 }
+
 h3{ 
     position:absolute;
     left:45%;
 }
-/* 8oopx 430px and 390px*/
+
+/* widths were chosen 1 class, 2 inspect recommend.*/
 @media screen and (max-width:992px){
+
     section{
         margin-left:40px ;
         margin-right:40px ;
     }
+
     h2{
         font-size:40px;
         margin-left:35%;
 
     }
-    #avatar{
-        
-    }
+
    img{
         width: 300px;
         margin:15px;
@@ -146,34 +146,45 @@ h3{
         font-size:20px;
         display:flex;
     }
+
     div{
         margin-left:10%;
     }
 }
+
+
 @media screen and (max-width:810px){
     nav{
         right:150px;
     }
+
     div{
         margin-left:5%;
     }
 }
+
+
 @media screen and (max-width:768px) {
     h1{
         text-align: center;
     }
+
     nav{
         right:100px;
     }
+
     p{
         display:flex;
         flex-wrap: wrap;
     }
+
     div{
         margin-left:4%;
     }
     
 }
+
+/* when theres time make these diff color */
 @media screen and (max-width:576px){
     nav{
         right:30px;
@@ -182,9 +193,11 @@ h3{
         margin:10px;
        font:25px;
     }
+
     h2{
         margin-left:25%;
     }
+
     #avatar{
         float:none;
         display:block; 
@@ -199,9 +212,11 @@ h3{
     img{
         margin-left:100px;
     }
+
     p{
         display:block;
     }
+
     div{
          margin:5%;
     }
@@ -210,25 +225,30 @@ h3{
         font-size:35px;
         
     }
+
     h3{
         left:40%;
     }
-    }
-    @media screen and (max-width:430px){
+}
+
+
+@media screen and (max-width:430px){
         h1{
             font-size: 75px;
         }
+
         nav{
         right:auto;
         }
         nav a {
             font-size:20px;
             margin:15px;
-
         }
+
         h2{
             margin-left:20%;
         }
+
         #avatar{
             left:10px;
         }
@@ -236,6 +256,7 @@ h3{
             margin-left:5%;
             width:90%;
         }
+
         div{
             margin:7%;
         }
@@ -243,26 +264,32 @@ h3{
             font-size:25px;
             margin:3%;
         }
-    }
-    @media screen and (max-width:390px){
+}
+
+
+@media screen and (max-width:390px){
         h1{
             font-size:60px;
 
         }
+
         nav a{
             font:20px;
             margin: 10px;
         }
+
         h2{
             margin-left:15%;
         }
+
         #avatar{
             left:auto;
         }
+        
         div{
             margin-left:12%;
         }
         #contact a {
             font-size:20px;
         }
-    }
+}
