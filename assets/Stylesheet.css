@@ -1,4 +1,4 @@
-/*(put colors in root) colors green- #8bdfca  blue- #8ba6df purple- #b28bdf darkblue- #005884 darkgreen- #327564*/
+/*(put colors in root) colors green- #8bdfca  blue- #8ba6df purple- #b28bdf darkblue- #005884 darkgreen- #327564 darkpurple- #3e0084 */
 :root{
     --purple: #b28bdf;
     --green: #8bdfca;
@@ -18,7 +18,7 @@ header{
     
     background-image: url(background-header.jpg);
     padding:5%;
-    border-bottom:10px solid #327564 ;
+    border-bottom:10px solid #3e0084 ;
     margin-bottom:20px;
 
 }
@@ -102,7 +102,9 @@ div{
 }
 
 footer{
+    border-top: 10px solid #327564;
     padding:5%;
+    background-image: url(background-footer.jpg);
 }
 h3{ 
     position:absolute;
@@ -133,12 +135,62 @@ h3{
 
      p{
         font-size:20px;
+        display:flex;
     }
     div{
         margin-left:4%;
     }
 }
 @media screen and (max-width:768px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        right:100px;
+    }
+    p{
+        display:flex;
+        flex-wrap: wrap;
+    }
     
 }
-@media screen and (max-width:576px)
+@media screen and (max-width:576px){
+    nav{
+        right:30px;
+    }
+    nav a {
+        margin:10px;
+       font:25px;
+    }
+    h2{
+        margin-left:25%;
+    }
+    #avatar{
+        float:none;
+        display:block; 
+        position:relative;
+        left:60px;
+        
+    }
+    #best{
+        width:90%;
+        margin-left:5%;
+    }
+    img{
+        margin-left:100px;
+    }
+    p{
+        display:block;
+    }
+    div{
+         margin:5%;
+    }
+    #contact a{
+        margin:15px;
+        font-size:35px;
+        
+    }
+    h3{
+        left:40%;
+    }
+    }
